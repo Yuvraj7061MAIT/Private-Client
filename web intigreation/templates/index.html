@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name]'s Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1 class="translatable">[Your Name]'s Portfolio</h1>
+        <p class="translatable">About Me</p>
+        <button id="translateButton">Translate to Hindi</button>
+    </header>
+
+    <section>
+        <h2 class="translatable">About Me</h2>
+        <p class="translatable">Hello! I'm [Your Name], a passionate [Your Profession or Field]. I have a keen interest in [specific interests or specialties]. My journey in this field began [mention how and when your journey started]. I believe in the power of [mention any principles or beliefs guiding your work].</p>
+    </section>
+
+    <section>
+        <h2 class="translatable">Projects</h2>
+        <div class="project">
+            <h3 class="translatable">Project 1: [Project Name]</h3>
+            <p class="translatable">Description: [Brief description of the project, its goals, and objectives.]</p>
+            <p class="translatable">Role: [Your role in the project (e.g., developer, designer, project manager).]</p>
+            <p class="translatable">Technologies Used: [List of technologies, tools, or languages used.]</p>
+            <p class="translatable">Link: <a href="#">[Link to the project (if available)]</a></p>
+        </div>
+        <!-- Repeat this div for each project -->
+    </section>
+
+    <section>
+        <h2 class="translatable">Skills</h2>
+        <ul>
+            <li class="translatable">Programming Languages: [List of programming languages you're proficient in.]</li>
+            <li class="translatable">Design Tools: [List of design tools you're familiar with.]</li>
+            <li class="translatable">Project Management: [Any project management tools or methodologies you're experienced with.]</li>
+            <li class="translatable">Other Skills: [Any other relevant skills you possess.]</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="translatable">Education</h2>
+        <p class="translatable">[Degree/Certificate]: [Your degree or certification]<br>
+        Institution: [Name of the institution]<br>
+        Year: [Year of completion]</p>
+    </section>
+
+    <footer>
+        <p class="translatable">Contact Me:</p>
+        <p class="translatable">Email: [Your email address]</p>
+        <p class="translatable">Phone: [Your phone number]</p>
+        <p class="translatable">LinkedIn: <a href="#">[Your LinkedIn profile link]</a></p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
